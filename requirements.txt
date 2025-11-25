@@ -1,0 +1,11 @@
+tensorflow>=2.16
+numpy
+scipy
+pandas
+networkx
+gensim>=4.3
+scikit-learn
+matplotlib
+umap-learn
+tqdm
+requests
