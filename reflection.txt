@@ -1,0 +1,8 @@
+1. Biggest Challenge and How I Addressed It
+My biggest challenge was setting up the project environment and getting the graph datasets to load correctly, especially for the Citeseer dataset which required handling isolated nodes. I resolved this by building a clean project structure, creating a custom dataset loader, and applying the standard Citeseer “isolated node fix” used in Planetoid-based GCN implementations. Once the data issues were fixed, both DeepWalk and GCN models executed successfully and produced valid metrics.
+
+2. What I Learned (and what could have been done better)
+I learned how graph representation learning pipelines work end-to-end, from dataset preprocessing to training unsupervised embeddings and supervised GNN models. I gained a deeper understanding of how random-walk methods (DeepWalk) differ from message-passing neural networks (GCN), and why label supervision improves classification. I also learned practical skills in debugging dataset formats, building training scripts, and interpreting evaluation metrics (Accuracy and AUC). With more time, I would experiment with deeper GCN architectures, GraphSAGE, or GAT, and tune hyperparameters to improve performance.
+
+3. Self-Evaluation (A/B/C/D and Why)
+I give myself an A for the project. I completed the full pipeline (DeepWalk + GCN) on both Cora and Citeseer, implemented the models from scratch, fixed dataset issues, generated metrics and plots, and wrote a detailed final report analyzing the results. The code runs end-to-end and produces reproducible results.
